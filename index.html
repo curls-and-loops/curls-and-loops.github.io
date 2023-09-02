@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" type="text/css" href="public/style.css" />
     </head>
-    <body>
-        
+    <body id="content">
+        <h1>Recent Projects</h1>
+        <script>
+            let div = document.createElement('div');
+            div.setAttribute('class', 'article');
+            div.innerHTML = "<object data='public/projects/happy-computer/index.html'></object>";
+            document.getElementById('content').appendChild(div);
+        </script>
     </body>
 </html>
