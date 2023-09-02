@@ -1,0 +1,45 @@
+<style>
+        .iPod {
+            width: 125px;
+            height: 275px;
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            
+            transform: translate(-50%, -50%);
+            
+            background: white;
+            border-radius: 5px;
+            
+            border-color: black;
+            border-style: solid;
+            border-width: 0.5px;
+            
+            z-index: -1;
+        }
+        
+        .iPod::after{
+            content: '';
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            background: linear-gradient(0deg, rgb(233,246,255) 0%, rgb(233,246,255) 100%) no-repeat 10px 10px / 105px 75px,
+            radial-gradient(circle at center, white 70%, transparent 70%) no-repeat 50% 66% / 45px 45px,
+            radial-gradient(circle at center, lightgray 70%, transparent 70%) no-repeat 12.5px 125px / 100px 100px
+            ;
+            
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .body {
+            background-color: lightgray;
+        }
+</style>
+<div class="body">
+    <div class="iPod">
+
+    </div>
+</div>
