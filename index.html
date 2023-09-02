@@ -13,7 +13,7 @@
 
             var xml = new XMLHttpRequest();
             xml.overrideMimeType("application/json");
-            xml.open("GET", "public/data.json", true);
+            xml.open("GET", "/public/data.json", false);
 
             xml.onreadystatechange = () => {
                 if (xml.readyState == 4 && xml.status == 200) {
