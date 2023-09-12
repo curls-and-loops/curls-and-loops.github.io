@@ -7,7 +7,7 @@
     }
     h1 {
         font-family: arial;
-        font-size: 0.75em;
+        font-size: 1.5em;
         color: white;
     }
     html {
@@ -30,6 +30,10 @@
         left:-5px;
         float: left;
     }
+
+    .content:nth-child(2n){
+        flex-grow: 2;
+    }
     
     .entry {
         display: flex;
@@ -39,21 +43,22 @@
 
 
     #happypod{
-        order: 1;
+        order: 2;
         flex-grow:2;
     }
 
-    #rainbow{
-        order:2;
-    }
 
     #pattern {
-        order: 3;
+        order: 4;
         flex-grow:3;
     }
 
     #circular {
-        order: 0;
+        order: 1;
+    }
+
+    #orbit {
+        order: 6;
     }
     
     object {
@@ -63,6 +68,7 @@
     
     #rainbow {
         background-color:white;
+        order: 3;
     }
     
     #circular {
@@ -127,6 +133,10 @@
 
     #circular {
         order: 1;
+    }
+
+    #orbit {
+        order: 5;
     }
     
     object {

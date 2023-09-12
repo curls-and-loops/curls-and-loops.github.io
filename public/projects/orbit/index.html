@@ -1,0 +1,70 @@
+<style>
+
+    @keyframes orbit {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+
+        div::after{
+
+            animation: orbit  5000ms infinite linear;
+        }
+    }
+
+    div::before {
+        width: 100%;
+        height: 100%;
+        
+        content:'';
+
+        background: 
+                    radial-gradient(circle at 35% 50%, #999 4%, transparent 0%),
+                    radial-gradient(circle at 60% 45%, #999 5%, transparent 0%),
+                    radial-gradient(circle at 50% 35%, #999 2.5%, transparent 0%),
+                    radial-gradient(circle at 65% 55%, #999 2.5%, transparent 0%),
+                    radial-gradient(circle at 55% 65%, #999 2.5%, transparent 0%),
+                    radial-gradient(circle at center, #cccccc 35%, transparent 0%)
+        ;
+
+        displaY: block;
+    }
+
+    div {
+        width: 100%;
+        height: 100%; 
+        background-color: #160747;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        box-sizing: border-box;
+        overflow:hidden;
+    }
+
+    div::after{
+        display: block;
+        
+        content: '';
+
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+
+        background:
+        radial-gradient(circle at 70% 15%, slateblue 2%, transparent 5% ),
+        radial-gradient(circle at 72% 14%, fuchsia 2%, transparent 5% ),
+                radial-gradient(circle at 20% 15%, rgba(255,0,0) 2%, transparent 7.5%),
+                radial-gradient(circle at 15% 70%, orange 4%, transparent 7%),
+                radial-gradient(circle at 25% 15%, lightgreen 1%, transparent 5%), 
+                radial-gradient(circle at 47% 90%, pink 1%, transparent 5%),
+                radial-gradient(circle at 45% 92.5%, lightgreen 1%, transparent 5%);
+    
+    }
+</style>
+<div>
+
+</div>
