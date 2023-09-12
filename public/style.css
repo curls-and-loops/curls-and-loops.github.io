@@ -25,40 +25,27 @@
         display:flex;
         flex-flow: row wrap;
         align-content: flex-start;
-        position: relative;
-        
-        left:-5px;
-        float: left;
-    }
 
-    .content:nth-child(2n){
-        flex-grow: 2;
+
+        gap: 5px;
+        
+        float: left;
     }
     
     .entry {
         display: flex;
-        flex-basis:content;
+        flex-basis:25%;
         flex-grow:1;
     }
 
 
     #happypod{
-        order: 2;
-        flex-grow:2;
+        flex-grow:1;
     }
 
 
-    #pattern {
-        order: 4;
-        flex-grow:3;
-    }
-
-    #circular {
-        order: 1;
-    }
-
-    #orbit {
-        order: 6;
+    #pattern, #circular {
+        flex-basis: 50%;
     }
     
     object {
@@ -112,18 +99,17 @@
     
     .entry {
         display: flex;
-        flex-basis:content;
+        flex-basis:25%;
         flex-grow:1;
     }
 
 
     #happypod{
-        order: 2;
-        flex-grow:2;
+        flex-grow:1;
     }
 
     #rainbow{
-        order:3;
+ 
     }
 
     #pattern {
@@ -132,11 +118,9 @@
     }
 
     #circular {
-        order: 1;
     }
 
     #orbit {
-        order: 5;
     }
     
     object {
