@@ -65,7 +65,7 @@
 }
 
 @media screen and (orientation: landscape) {
-    
+     
     h1 {
         font-family: arial;
     }
@@ -80,9 +80,38 @@
     }
     
     .content{
-        width: 85%;
-        margin: auto;
-        text-align: center;
+        width: 100%;
+        display:flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    
+    .entry {
+        display: flex;
+        flex-basis:content;
+        flex-grow:1;
+    }
+
+
+    #happypod{
+        order: 1;
+        flex-grow:2;
+    }
+
+    #rainbow{
+        order:2;
+    }
+
+    #pattern {
+        order: 3;
+        flex-grow:3;
+    }
+
+    #circular {
+        order: 0;
     }
     
     object {
