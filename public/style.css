@@ -14,3 +14,9 @@ object {
     border-radius: 10px;
     max-height: 100%;
 }
+
+#circular {
+    border-style: solid;
+    border-color: white;
+    border-width: 0.5px;
+}
