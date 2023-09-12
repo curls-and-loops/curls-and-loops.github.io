@@ -97,21 +97,21 @@
 
 
     #happypod{
-        order: 1;
+        order: 2;
         flex-grow:2;
     }
 
     #rainbow{
-        order:2;
+        order:3;
     }
 
     #pattern {
-        order: 3;
+        order: 4;
         flex-grow:3;
     }
 
     #circular {
-        order: 0;
+        order: 1;
     }
     
     object {
