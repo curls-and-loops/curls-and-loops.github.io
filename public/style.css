@@ -15,6 +15,10 @@ object {
     max-height: 100%;
 }
 
+#rainbow {
+    background-color:white;
+}
+
 #circular {
     border-style: solid;
     border-color: white;
