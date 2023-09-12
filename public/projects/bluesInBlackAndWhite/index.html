@@ -1,0 +1,75 @@
+<style>
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotateCCW {
+        100% {
+            transform: rotate(-360deg)
+        }
+    }
+
+    @media (prefers-reduced-motion: no-preference)
+    {
+        div::before {
+            animation: rotate 3000ms linear infinite;
+        }
+
+        div::after{
+            animation: rotate 2000ms linear infinite;
+        }
+    }
+    
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, black 50%, white 50%);
+    }
+
+    div::before {
+        content : '';
+        width: 8em;
+        height: 8em;
+
+        left: 50%;
+        top: 50%;
+
+        margin-left: -4em;
+
+        border-radius: 50%;
+        display: block;
+        
+        position: absolute;
+
+        background-image: linear-gradient(to right, white 50%, black 50%);
+    }
+
+    div::after {
+        content : '';
+        width: 8em;
+        height: 8em;
+
+        left: 50%;
+        top: 50%;
+
+        margin-top: -12em;
+        margin-left: -4em;
+
+        border-radius: 50%;
+        display: block;
+        
+        position: absolute;
+
+        background-image: linear-gradient(to right, white 50%, black 50%);
+    }
+</style>
+
+<div>
+
+</div>
