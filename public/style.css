@@ -1,33 +1,102 @@
-h1 {
-    font-family: arial;
-}
-html {
-    width: 100%;
-    height: 100%;
+@media screen and (orientation: portrait) {
+    
+    h1 {
+        font-family: arial;
+    }
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        background-color: black;
+        width: 100%;
+    }
+    
+    .content{
+        width: 100%;
+        display:flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    
+    .entry {
+        display: flex;
+        flex-basis:content;
+        flex-grow:1;
+    }
+
+
+    #happypod{
+        order: 1;
+        flex-grow:2;
+    }
+
+    #rainbow{
+        order:2;
+    }
+
+    #pattern {
+        order: 3;
+        flex-grow:3;
+    }
+
+    #circular {
+        order: 0;
+    }
+    
+    object {
+        border-radius: 10px;
+        max-height: 100%;
+    }
+    
+    #rainbow {
+        background-color:white;
+    }
+    
+    #circular {
+        border-style: solid;
+        border-color: white;
+        border-width: 0.5px;
+    }    
 }
 
-body {
-    background-color: black;
-    width: 100%;
-}
-
-.content{
-    width: 85%;
-    margin: auto;
-    text-align: center;
-}
-
-object {
-    border-radius: 10px;
-    max-height: 100%;
-}
-
-#rainbow {
-    background-color:white;
-}
-
-#circular {
-    border-style: solid;
-    border-color: white;
-    border-width: 0.5px;
+@media screen and (orientation: landscape) {
+    
+    h1 {
+        font-family: arial;
+    }
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        background-color: black;
+        width: 100%;
+    }
+    
+    .content{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    object {
+        border-radius: 10px;
+        max-height: 100%;
+    }
+    
+    #rainbow {
+        background-color:white;
+    }
+    
+    #circular {
+        border-style: solid;
+        border-color: white;
+        border-width: 0.5px;
+    }    
 }
