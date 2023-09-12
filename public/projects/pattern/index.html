@@ -1,0 +1,89 @@
+<style>
+    div {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        
+    }
+
+    div{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+
+
+        --s: 150px;
+        --c1 : #00225C;
+        --c2 : #f1dc81;
+        --_g : var(--c1) 0% 5%, var(--c2) 6% 11%, 
+                var(--c1) 12% 17%, var(--c2) 18% 23%,
+                var(--c1) 24% 29%, var(--c2) 30% 35%,
+                var(--c1) 36% 41%, var(--c2) 42% 47%,
+                var(--c1) 48% 53%, var(--c2) 54% 59%, 
+                var(--c1) 60% 65%, var(--c2) 66% 71%,
+                var(--c1) 72% 77%, var(--c2) 78% 83%,
+                var(--c1) 84% 89%, var(--c2) 90% 95%,
+                #0000 96%;
+
+        background: radial-gradient(50% 50% at 100% 0, var(--_g)),
+                    radial-gradient(50% 50% at 0 100%, var(--_g)),
+                    radial-gradient(50% 50%, var(--_g)),
+                    radial-gradient(50% 50%, var(--_g)) calc(var(--s)/2) calc(vaR(--s)/2),
+                    var(--c1);
+
+        background-size: var(--s) var(--s);
+/* 
+    background-image:
+        radial-gradient(
+            circle at center,
+            #AFEDC4 2.5%,
+            transparent 2.5%
+        ),   
+        radial-gradient(
+            circle at center,
+            #C4AFED 5%,
+            transparent 5%
+        ), 
+        radial-gradient(
+            circle at center,
+            #AFEDC4 7.5%,
+            transparent 5%
+        ),   
+        radial-gradient(
+            circle at center,
+            #C4AFED 10%,
+            transparent 5%
+        ),
+        radial-gradient(
+            circle at center,
+            #AFEDC4 12.5%, 
+            transparent 5%
+        ),
+        radial-gradient(
+            circle at center,
+            #C4AFED 15.5%,
+            transparent 5%
+        ),
+        radial-gradient(
+            circle at center,
+            #AFEDC4 17.5%, 
+            transparent 5%
+        ),
+        radial-gradient(
+            circle at center, 
+            #C4AFED 20%, 
+            transparent 5%
+        ); */
+
+    }
+</style>
+<div>
+
+</div>
