@@ -1,0 +1,70 @@
+<style>  
+    div{
+        position: absolute;
+        top:0;
+        left:0;
+        opacity: 0.65;
+       --c1 : #FF0000;
+      --c2 : #FF7F00;
+      --c3 : #FFFF00;
+      --c4 : #00FF00;
+      --c5 : #0000FF;
+      --c6 : #4B0082;
+      --c7 : #9400D3;    
+      --s : 300px;
+      --g :  var(--c1) 0% 12%,
+             var(--c2) 12% 17%, var(--c3) 18% 23%,
+             var(--c4) 24% 29%, var(--c5) 30% 35%,
+             var(--c6) 36% 41%, var(--c7) 42% 47%,
+             var(--c7) 47% 42%,
+             var(--c6) 41% 36%, var(--c5) 36% 31%,
+             var(--c4) 30% 25%, var(--c3) 24% 19%,
+             var(--c2) 14% 9%, var(--c1) 8% 0%,
+             transparent 45%;
+      
+      background: 
+                    linear-gradient(135deg, var(--g)),
+                    linear-gradient(45deg, var(--g));
+    
+      background-size : calc(var(--s) / 2) calc(var(--s) /2);
+      width: 100%;
+      height: 100%;
+    }
+    
+    div::after {
+        content: '';
+      --c1 : #FF0000;
+      --c2 : #FF7F00;
+      --c3 : #FFFF00;
+      --c4 : #00FF00;
+      --c5 : #0000FF;
+      --c6 : #4B0082;
+      --c7 : #9400D3;    
+      --s : 300px;
+      --g :  var(--c1) 0% 12%,
+             var(--c2) 12% 17%, var(--c3) 18% 23%,
+             var(--c4) 24% 29%, var(--c5) 30% 35%,
+             var(--c6) 36% 41%, var(--c7) 42% 47%,
+             var(--c7) 47% 42%,
+             var(--c6) 41% 36%, var(--c5) 36% 31%,
+             var(--c4) 30% 25%, var(--c3) 24% 19%,
+             var(--c2) 14% 9%, var(--c1) 8% 0%,
+             transparent 45%;
+      
+      background: 
+      linear-gradient(-135deg, var(--g)),
+      linear-gradient(-45deg, var(--g));
+
+      background-size : calc(var(--s) / 2)  calc(var(--s) / 2);
+      
+      
+      width: 100%;
+      height: 100%;
+
+      display:block;
+    }
+  </style>
+  
+  <div>
+    
+  </div>
