@@ -108,19 +108,9 @@
         flex-grow:1;
     }
 
-    #rainbow{
- 
-    }
-
     #pattern {
         order: 4;
         flex-grow:3;
-    }
-
-    #circular {
-    }
-
-    #orbit {
     }
     
     object {
