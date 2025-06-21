@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale-=1.0" />
     <title>J Card Template</title>
     <link rel="stylesheet" type="text/css" href="public/jcardgen.css" />
+    <script src="modules/j-card-template/main.mjs" type="module"></script>
   </head>
   <body class="container">
     <aside class="customizer-container">
-      <section>
-        <label for="background-image"></label>
-        <input class="background-image" type="file" accept="image/*" />
+      <section class="cover-image-upload">
+        <label for="background-image">Upload een achtergrond foto</label>
+        <input class="background-image" id="background-image" type="file" accept="image/*" />
       </section>
     </aside>
     <section class="template-container">
       <section class="heightWrapper">
-        <section class="flap"></section>
-        <section class="spine"></section>
-        <section class="cover"></section>
+        <section class="flap" id="flap"></section>
+        <section class="spine" id="spine"></section>
+        <section class="cover" id="cover"></section>
       </section>
     </section>
   </body>

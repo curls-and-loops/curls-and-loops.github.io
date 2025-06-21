@@ -27,21 +27,43 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
+  border-style: dashed;
+  border-width: 1px;
 }
 
 .flap {
-  background-color: blue;
+  border-right-style: dashed;
+  border-right-width: 1px;
   width: 1in;
 }
 
 .spine {
-  background-color: tomato;
+  border-right-style: dashed;
+  border-right-width: 1px;
   width: 0.5in;
 }
 
 .cover {
-  background-color: green;
+  border-right-style: dashed;
+  border-right-width: 1px;
   width: 2.6252in;
+}
+
+.cover-image-upload {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  border-right-width: 1px;
+  border-right-color: black;
+  border-right-style: dashed;
+  width: 25%;
+}
+
+.cover > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .customizer-container {
