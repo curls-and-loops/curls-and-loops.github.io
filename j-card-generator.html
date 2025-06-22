@@ -10,8 +10,12 @@
   <body class="container">
     <aside class="customizer-container">
       <section class="cover-image-upload">
-        <label for="background-image">Upload een achtergrond foto</label>
+        <label for="background-image">Upload een cover afbeelding</label>
         <input class="background-image" id="background-image" type="file" accept="image/*" />
+        <select id="cover-image-position">
+          <option value="cover" selected>Gevuld</option>
+          <option value="scale-down">Gecentreerd</option>
+        </select>
       </section>
     </aside>
     <section class="template-container">
